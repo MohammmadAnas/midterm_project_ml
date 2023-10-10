@@ -1,0 +1,6 @@
+gunicorn --bind=0.0.0.0:9696 predict:app
+
+
+sudo docker build -t insurance_pred .
+
+docker run -it -p 9696:9696 insurance_pred:latest
