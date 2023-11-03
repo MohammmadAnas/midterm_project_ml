@@ -18,6 +18,11 @@ You can run the project with Docker. To do so, you need to have Docker installed
 ```bash
 sudo docker build -t insurance_pred .
 ```
+Now run the docker image using the following command:
+
+```bash
+docker run -it -p 9696:9696 insurance_pred:latest
+```
 
 Then, you can run the project with the following command:
 
